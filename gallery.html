@@ -1,7 +1,5 @@
 <section id="vk-gallery" class="vk-gallery-section">
     <div class="container">
-        <h2 style="text-align: center;">Наши работы</h2>
-        <p style="text-align: center;">Посмотрите на некоторые из наших лучших проектов.</p>
         <div class="vk-posts">
             <div class="vk-post" id="vk_post_-212278334_2"></div>
             <div class="vk-post" id="vk_post_-212278334_3"></div>
@@ -28,13 +26,11 @@
         background-color: #f9f9f9;
     }
     .vk-posts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
     .vk-post {
-        width: 300px; /* Ширина поста */
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
